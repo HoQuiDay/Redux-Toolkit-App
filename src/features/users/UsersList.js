@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
-import { selectAllUsers } from './usersSlice'
 import { Link } from 'react-router-dom'
+import { selectAllUsers } from './usersSlice'
 
 const UsersList = () => {
   const users = useSelector(selectAllUsers)
@@ -14,7 +14,6 @@ const UsersList = () => {
   return (
     <section>
       <h2>Users</h2>
-
       <ul>{renderedUsers}</ul>
     </section>
   )
